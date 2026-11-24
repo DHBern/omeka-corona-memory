@@ -1,0 +1,591 @@
+<!DOCTYPE html><html lang="de-DE">    <head>
+        <meta charset="utf-8">
+<meta property="og&#x3A;title" content="Beitrag&#x20;hochladen&#x20;&#xB7;&#x20;DH&#x40;UNIBE&#x20;Omeka">
+<meta property="og&#x3A;type" content="website">
+<meta property="og&#x3A;url" content="https&#x3A;&#x2F;&#x2F;omeka.unibe.ch&#x2F;s&#x2F;corona-memory&#x2F;page&#x2F;upload-doc">
+<meta name="viewport" content="width&#x3D;device-width,&#x20;initial-scale&#x3D;1">        <title>Beitrag hochladen · Corona-Memory.ch DE · DH@UNIBE Omeka</title>        <link href="https&#x3A;&#x2F;&#x2F;fonts.googleapis.com&#x2F;css2&#x3F;family&#x3D;Economica&#x3A;wght&#x40;700&amp;family&#x3D;Open&#x2B;Sans&#x3A;ital,wght&#x40;0,400&#x3B;0,600&#x3B;0,700&#x3B;1,400&#x3B;1,600&#x3B;1,700&amp;display&#x3D;swap" media="screen" rel="stylesheet" type="text&#x2F;css">
+<link href="../../../application/asset/css/iconfonts.css" media="screen" rel="stylesheet" type="text&#x2F;css">
+<link href="../../../themes/corona-memory/asset/css/style.css" media="screen" rel="stylesheet" type="text&#x2F;css">
+<link href="../../../modules/Mapping/asset/vendor/leaflet/leaflet.css" media="screen" rel="stylesheet" type="text&#x2F;css">
+<link href="../../../modules/Mapping/asset/vendor/leaflet.geosearch/assets/css/leaflet.css" media="screen" rel="stylesheet" type="text&#x2F;css">
+<link href="../../../modules/Mapping/asset/css/mapping.css" media="screen" rel="stylesheet" type="text&#x2F;css">
+<link href="../../../modules/Collecting/asset/css/collecting.css" media="screen" rel="stylesheet" type="text&#x2F;css">
+<link href="../../../modules/NumericDataTypes/asset/css/numeric-data-types.css" media="screen" rel="stylesheet" type="text&#x2F;css">
+<link href="../../../application/asset/css/page-blocks.css" media="screen" rel="stylesheet" type="text&#x2F;css">
+<link href="../../../modules/FieldsAsTags/asset/css/fieldsastags.css" media="screen" rel="stylesheet" type="text&#x2F;css">
+<link href="../../../application/asset/vendor/chosen-js/chosen.min.css" media="screen" rel="stylesheet" type="text&#x2F;css">
+<link href="../../../modules/AdvancedSearch/asset/css/search.css" media="screen" rel="stylesheet" type="text&#x2F;css">
+<link href="../../../modules/Internationalisation/asset/css/language-switcher.css" media="screen" rel="stylesheet" type="text&#x2F;css">
+<link href="../../../modules/Internationalisation/asset/vendor/flag-icon-css/css/flag-icon.min.css" media="screen" rel="stylesheet" type="text&#x2F;css">                <script  src="&#x2F;&#x2F;kit.fontawesome.com&#x2F;53f38da7f9.js"></script>
+<script  src="&#x2F;&#x2F;ajax.googleapis.com&#x2F;ajax&#x2F;libs&#x2F;jquery&#x2F;3.5.1&#x2F;jquery.min.js"></script>
+<script  src="../../../application/asset/js/global.js"></script>
+<script  src="../../../themes/corona-memory/asset/js/default.js"></script>
+<script  src="../../../application/asset/vendor/ckeditor/ckeditor.js"></script>
+<script  src="../../../application/asset/vendor/ckeditor/adapters/jquery.js"></script>
+<script >
+    //<!--
+    CKEDITOR.config.customConfig = '\x2Fapplication\x2Fasset\x2Fjs\x2Fckeditor_config.js\x3Fv\x3D3.1.1'
+    //-->
+</script>
+<script  src="../../../modules/Mapping/asset/vendor/leaflet/leaflet.js"></script>
+<script  src="../../../modules/Mapping/asset/js/mapping-collecting-form.js"></script>
+<script  src="../../../modules/Mapping/asset/vendor/leaflet.geosearch/dist/bundle.min.js"></script>
+<script  src="../../../modules/Collecting/asset/js/collecting-block.js"></script>
+<script  src="../../../modules/NumericDataTypes/asset/js/numeric-data-types.js"></script>
+<script  src="../../../application/asset/js/recaptcha.js"></script>
+<script  async="async" defer="defer" src="https&#x3A;&#x2F;&#x2F;www.google.com&#x2F;recaptcha&#x2F;api.js&#x3F;onload&#x3D;recaptchaCallback&amp;render&#x3D;explicit"></script>
+<script >
+    //<!--
+    
+Omeka.jsTranslate = function(str) {
+    var jsTranslations = {"Something went wrong":"Etwas lief schief.","Make private":"Privat setzen","Make public":"Ver\u00f6ffentlichen","Expand":"Ausklappen","Collapse":"Einklappen","You have unsaved changes.":"Sie haben ungesicherte \u00c4nderungen.","Restore item set":"Sammlung wiederherstellen","Close icon set":"Close icon set","Open icon set":"Open icon set","[Untitled]":"[Ohne Titel]","Failed loading resource template from API":"Laden der Ressourcenvorlage von der API fehlgeschlagen","Restore property":"Eigenschaft wiederherstellen","There are no available pages.":"Keine verf\u00fcgbaren Seiten","Please enter a valid language tag":"Please enter a valid language tag","Title":"Titel","Description":"Beschreibung","Automatic mapping of empty values":"Automatic mapping of empty values","Available":"Available","Enabled":"Enabled","Find":"Find","Find resources\u2026":"Find resources\u2026","Processing\u2026":"Processing\u2026","Try to map automatically the metadata and the properties that are not mapped yet with the fields of the index":"Try to map automatically the metadata and the properties that are not mapped yet with the fields of the index","Advanced bulk edit":"Advanced bulk edit","The actions are processed in the order of the form. Be careful when mixing them.":"The actions are processed in the order of the form. Be careful when mixing them.","Cleaning":"Cleaning","Convert datatype":"Convert datatype","Displace values":"Displace values","Explode values":"Explode values","Media HTML":"Media HTML","Order values":"Order values","Replace literal values":"Replace literal values","Visibility of values":"Visibility of values","Remove mapping":"Remove mapping"};
+    return (str in jsTranslations) ? jsTranslations[str] : str;
+};
+    //-->
+</script>
+<script  defer="defer" src="../../../application/asset/vendor/chosen-js/chosen.jquery.min.js"></script>
+<script  defer="defer" src="../../../modules/AdvancedSearch/asset/js/search.js"></script>        
+        <style>
+                        a:link,
+            a:visited {
+                color: #5a308d            }
+            
+            a:active,
+            a:hover {
+                color: #5a308d;
+                opacity: .75;
+            }
+                    </style>
+    </head>
+
+    <body class="page"><div style="background:#fff3cd;padding:.5em 1em;font:14px sans-serif;border-bottom:1px solid #e0c97f">Static archive of a former Omeka site (snapshot 2026-11-24). Search and interactive features are not available.</div>                <header>
+            <h1>
+                <a href="../index.html" class="site-title">
+                    <img src="../../../themes/corona-memory/asset/img/logo.svg" alt="Corona-Memory.ch DE" title="Startseite"/>
+                </a>
+            </h1>
+
+            <nav>
+            <ul class="navigation">
+    <li>
+        <a href="welcome.html">⌂</a>
+    </li>
+    <li class="active">
+        <a href="upload-doc.html">Beitrag hochladen</a>
+    </li>
+    <li>
+        <a href="../item.html">Beiträge ansehen</a>
+    </li>
+    <li>
+        <a href="visualizations.html">Visualisierungen</a>
+    </li>
+    <li>
+        <a href="postcard.html">Postkarten</a>
+    </li>
+    <li>
+        <a href="about.html">Über uns</a>
+    </li>
+    <li>
+        <a href="../../corona-memory-fr/index.html">Français</a>
+    </li>
+    <li>
+        <a href="../../corona-memory-it/index.html">Italiano</a>
+    </li>
+</ul>            </nav>
+        </header>
+        <div id="content" role="main">
+            
+    
+    
+<div class="blocks">
+    <p>Hier k&ouml;nnen Sie Ihre Texte, Bilder, Videos und Audios hochladen und zug&auml;nglich machen. Wenn Sie auf einen Beitrag verlinken m&ouml;chten, der bereits andernorts ver&ouml;ffentlicht wurde, <a href="upload-soc-media.html">klicken Sie hier</a>!</p>
+<h2>Beitrag hochladen</h2>
+<form method="POST" name="collecting_form_1" action="https://omeka.unibe.ch/s/corona-memory/collecting/1/submit" enctype="multipart&#x2F;form-data" id="collecting_form_1" onsubmit="return false" onsubmit="return false"><div ><p><small>Eingaben mit * sind obligatorisch.</small></p></div><div class="field required">
+    <div class="field-meta">
+        <label for="prompt_1">Titel für Ihren Beitrag</label>            </div>
+    <div class="inputs">
+        <input type="text" name="prompt_1" required="required" value="">    </div>
+    </div>
+<div class="field required">
+    <div class="field-meta">
+        <label for="prompt_2">Schreiben Sie hier Ihre Geschichte oder kommentieren Sie den hochgeladenen Beitrag!</label>            </div>
+    <div class="inputs">
+        <textarea name="prompt_2" required="required"></textarea>    </div>
+    </div>
+<input type="hidden" name="prompt_5" value=""><div class="field">
+    <div class="field-meta">
+        <label for="file&#x5B;5&#x5D;">Hier kann die Datei hochgeladen werden</label>            </div>
+    <div class="inputs">
+        <input type="file" name="file&#x5B;5&#x5D;">    </div>
+    </div>
+<div class="field">
+    <div class="field-meta">
+        <label for="prompt_3">Wann wurde der Beitrag erstellt/aufgenommen?</label>            </div>
+    <div class="inputs">
+        <div class="numeric-timestamp">
+    <div class="error invalid-value"
+        data-invalid-message="Invalid value: %s"
+        data-custom-validity="Wert muss ein DateTime sein">
+    </div>
+    <input type="hidden" name="prompt_3" class="numeric-datetime-value" value="">    <div class="numeric-datetime-inputs">
+        <div class="numeric-date-inputs">
+            <input type="number" name="year" class="numeric-datetime-year" step="1" min="-292277022656" max="292277026595" placeholder="Jahr" value="">            <select name="month" class="numeric-datetime-month"><option value="">Monat</option>
+<option value="1">01 — January</option>
+<option value="2">02 — February</option>
+<option value="3">03 — March</option>
+<option value="4">04 — April</option>
+<option value="5">05 — May</option>
+<option value="6">06 — June</option>
+<option value="7">07 — July</option>
+<option value="8">08 — August</option>
+<option value="9">09 — September</option>
+<option value="10">10 — October</option>
+<option value="11">11 — November</option>
+<option value="12">12 — December</option></select>            <select name="day" class="numeric-datetime-day"><option value="">Tag</option>
+<option value="1">01</option>
+<option value="2">02</option>
+<option value="3">03</option>
+<option value="4">04</option>
+<option value="5">05</option>
+<option value="6">06</option>
+<option value="7">07</option>
+<option value="8">08</option>
+<option value="9">09</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+<option value="13">13</option>
+<option value="14">14</option>
+<option value="15">15</option>
+<option value="16">16</option>
+<option value="17">17</option>
+<option value="18">18</option>
+<option value="19">19</option>
+<option value="20">20</option>
+<option value="21">21</option>
+<option value="22">22</option>
+<option value="23">23</option>
+<option value="24">24</option>
+<option value="25">25</option>
+<option value="26">26</option>
+<option value="27">27</option>
+<option value="28">28</option>
+<option value="29">29</option>
+<option value="30">30</option>
+<option value="31">31</option></select>            <label class="numeric-toggle-time button" aria-title="Time" title="Time"><input type="checkbox" name="numeric-toggle-time-checkbox"/></label>
+        </div>
+        <div class="numeric-time-inputs">
+            <select name="hour" class="numeric-datetime-hour"><option value="">Stunde</option>
+<option value="0">00 — 12 am</option>
+<option value="1">01 — 1 am</option>
+<option value="2">02 — 2 am</option>
+<option value="3">03 — 3 am</option>
+<option value="4">04 — 4 am</option>
+<option value="5">05 — 5 am</option>
+<option value="6">06 — 6 am</option>
+<option value="7">07 — 7 am</option>
+<option value="8">08 — 8 am</option>
+<option value="9">09 — 9 am</option>
+<option value="10">10 — 10 am</option>
+<option value="11">11 — 11 am</option>
+<option value="12">12 — 12 pm</option>
+<option value="13">13 — 1 pm</option>
+<option value="14">14 — 2 pm</option>
+<option value="15">15 — 3 pm</option>
+<option value="16">16 — 4 pm</option>
+<option value="17">17 — 5 pm</option>
+<option value="18">18 — 6 pm</option>
+<option value="19">19 — 7 pm</option>
+<option value="20">20 — 8 pm</option>
+<option value="21">21 — 9 pm</option>
+<option value="22">22 — 10 pm</option>
+<option value="23">23 — 11 pm</option></select>            <select name="minute" class="numeric-datetime-minute"><option value="">Minute</option>
+<option value="0">00</option>
+<option value="1">01</option>
+<option value="2">02</option>
+<option value="3">03</option>
+<option value="4">04</option>
+<option value="5">05</option>
+<option value="6">06</option>
+<option value="7">07</option>
+<option value="8">08</option>
+<option value="9">09</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+<option value="13">13</option>
+<option value="14">14</option>
+<option value="15">15</option>
+<option value="16">16</option>
+<option value="17">17</option>
+<option value="18">18</option>
+<option value="19">19</option>
+<option value="20">20</option>
+<option value="21">21</option>
+<option value="22">22</option>
+<option value="23">23</option>
+<option value="24">24</option>
+<option value="25">25</option>
+<option value="26">26</option>
+<option value="27">27</option>
+<option value="28">28</option>
+<option value="29">29</option>
+<option value="30">30</option>
+<option value="31">31</option>
+<option value="32">32</option>
+<option value="33">33</option>
+<option value="34">34</option>
+<option value="35">35</option>
+<option value="36">36</option>
+<option value="37">37</option>
+<option value="38">38</option>
+<option value="39">39</option>
+<option value="40">40</option>
+<option value="41">41</option>
+<option value="42">42</option>
+<option value="43">43</option>
+<option value="44">44</option>
+<option value="45">45</option>
+<option value="46">46</option>
+<option value="47">47</option>
+<option value="48">48</option>
+<option value="49">49</option>
+<option value="50">50</option>
+<option value="51">51</option>
+<option value="52">52</option>
+<option value="53">53</option>
+<option value="54">54</option>
+<option value="55">55</option>
+<option value="56">56</option>
+<option value="57">57</option>
+<option value="58">58</option>
+<option value="59">59</option></select>            <select name="second" class="numeric-datetime-second"><option value="">Sekunde</option>
+<option value="0">00</option>
+<option value="1">01</option>
+<option value="2">02</option>
+<option value="3">03</option>
+<option value="4">04</option>
+<option value="5">05</option>
+<option value="6">06</option>
+<option value="7">07</option>
+<option value="8">08</option>
+<option value="9">09</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+<option value="13">13</option>
+<option value="14">14</option>
+<option value="15">15</option>
+<option value="16">16</option>
+<option value="17">17</option>
+<option value="18">18</option>
+<option value="19">19</option>
+<option value="20">20</option>
+<option value="21">21</option>
+<option value="22">22</option>
+<option value="23">23</option>
+<option value="24">24</option>
+<option value="25">25</option>
+<option value="26">26</option>
+<option value="27">27</option>
+<option value="28">28</option>
+<option value="29">29</option>
+<option value="30">30</option>
+<option value="31">31</option>
+<option value="32">32</option>
+<option value="33">33</option>
+<option value="34">34</option>
+<option value="35">35</option>
+<option value="36">36</option>
+<option value="37">37</option>
+<option value="38">38</option>
+<option value="39">39</option>
+<option value="40">40</option>
+<option value="41">41</option>
+<option value="42">42</option>
+<option value="43">43</option>
+<option value="44">44</option>
+<option value="45">45</option>
+<option value="46">46</option>
+<option value="47">47</option>
+<option value="48">48</option>
+<option value="49">49</option>
+<option value="50">50</option>
+<option value="51">51</option>
+<option value="52">52</option>
+<option value="53">53</option>
+<option value="54">54</option>
+<option value="55">55</option>
+<option value="56">56</option>
+<option value="57">57</option>
+<option value="58">58</option>
+<option value="59">59</option></select>            <select name="offset" class="numeric-datetime-offset"><option value="">Offset</option>
+<option value="-12&#x3A;00">-12:00</option>
+<option value="-11&#x3A;00">-11:00</option>
+<option value="-10&#x3A;00">-10:00</option>
+<option value="-09&#x3A;30">-09:30</option>
+<option value="-09&#x3A;00">-09:00</option>
+<option value="-08&#x3A;00">-08:00</option>
+<option value="-07&#x3A;00">-07:00</option>
+<option value="-06&#x3A;00">-06:00</option>
+<option value="-05&#x3A;00">-05:00</option>
+<option value="-04&#x3A;00">-04:00</option>
+<option value="-03&#x3A;30">-03:30</option>
+<option value="-03&#x3A;00">-03:00</option>
+<option value="-02&#x3A;00">-02:00</option>
+<option value="-01&#x3A;00">-01:00</option>
+<option value="&#x2B;00&#x3A;00">+00:00</option>
+<option value="&#x2B;01&#x3A;00">+01:00</option>
+<option value="&#x2B;02&#x3A;00">+02:00</option>
+<option value="&#x2B;03&#x3A;00">+03:00</option>
+<option value="&#x2B;03&#x3A;30">+03:30</option>
+<option value="&#x2B;04&#x3A;00">+04:00</option>
+<option value="&#x2B;04&#x3A;30">+04:30</option>
+<option value="&#x2B;05&#x3A;00">+05:00</option>
+<option value="&#x2B;05&#x3A;30">+05:30</option>
+<option value="&#x2B;05&#x3A;45">+05:45</option>
+<option value="&#x2B;06&#x3A;00">+06:00</option>
+<option value="&#x2B;06&#x3A;30">+06:30</option>
+<option value="&#x2B;07&#x3A;00">+07:00</option>
+<option value="&#x2B;08&#x3A;00">+08:00</option>
+<option value="&#x2B;08&#x3A;45">+08:45</option>
+<option value="&#x2B;09&#x3A;00">+09:00</option>
+<option value="&#x2B;09&#x3A;30">+09:30</option>
+<option value="&#x2B;10&#x3A;00">+10:00</option>
+<option value="&#x2B;10&#x3A;30">+10:30</option>
+<option value="&#x2B;11&#x3A;00">+11:00</option>
+<option value="&#x2B;12&#x3A;00">+12:00</option>
+<option value="&#x2B;12&#x3A;45">+12:45</option>
+<option value="&#x2B;13&#x3A;00">+13:00</option>
+<option value="&#x2B;14&#x3A;00">+14:00</option></select>        </div>
+    </div>
+</div>
+    </div>
+    </div>
+<div class="field">
+    <div class="field-meta">
+        <label for="prompt_39">Verorten Sie wenn möglich Ihren Beitrag auf der Karte (mit einem Klick wird ein Marker gesetzt)</label>            </div>
+    <div class="inputs">
+        
+            <input type="hidden" class="collecting-map-lat" name="prompt_39[lat]" value="">
+            <input type="hidden" class="collecting-map-lng" name="prompt_39[lng]" value="">
+            <div class="collecting-map" style="height:300px;"></div>    </div>
+    </div>
+<div class="field">
+    <div class="field-meta">
+        <label for="prompt_19">CheckboxSelect</label>            </div>
+    <div class="inputs">
+        <select name="prompt_19"><option value="">Bitte wählen Sie eine Option aus.</option>
+<option value="home">home</option>
+<option value="work">work</option>
+<option value="education">education</option>
+<option value="public">public</option>
+<option value="health">health</option>
+<option value="Web">Web</option>
+<option value="government">government</option>
+<option value="culture">culture</option>
+<option value="sport">sport</option>
+<option value="environment">environment</option>
+<option value="future">future</option>
+<option value="other">other</option></select>    </div>
+    </div>
+<div class="field">
+    <div class="field-meta">
+        <label for="prompt_20">CheckboxSelect</label>            </div>
+    <div class="inputs">
+        <select name="prompt_20"><option value="">Bitte wählen Sie eine Option aus.</option>
+<option value="home">home</option>
+<option value="work">work</option>
+<option value="education">education</option>
+<option value="public">public</option>
+<option value="health">health</option>
+<option value="Web">Web</option>
+<option value="government">government</option>
+<option value="culture">culture</option>
+<option value="sport">sport</option>
+<option value="environment">environment</option>
+<option value="future">future</option>
+<option value="other">other</option></select>    </div>
+    </div>
+<div class="field">
+    <div class="field-meta">
+        <label for="prompt_21">CheckboxSelect</label>            </div>
+    <div class="inputs">
+        <select name="prompt_21"><option value="">Bitte wählen Sie eine Option aus.</option>
+<option value="home">home</option>
+<option value="work">work</option>
+<option value="education">education</option>
+<option value="public">public</option>
+<option value="health">health</option>
+<option value="Web">Web</option>
+<option value="government">government</option>
+<option value="culture">culture</option>
+<option value="sport">sport</option>
+<option value="environment">environment</option>
+<option value="future">future</option>
+<option value="other">other</option></select>    </div>
+    </div>
+<div class="field">
+    <div class="field-meta">
+        <label for="prompt_107">CheckboxSelect</label>            </div>
+    <div class="inputs">
+        <select name="prompt_107"><option value="">Bitte wählen Sie eine Option aus.</option>
+<option value="home">home</option>
+<option value="work">work</option>
+<option value="education">education</option>
+<option value="public">public</option>
+<option value="health">health</option>
+<option value="Web">Web</option>
+<option value="government">government</option>
+<option value="culture">culture</option>
+<option value="sport">sport</option>
+<option value="environment">environment</option>
+<option value="future">future</option>
+<option value="other">other</option></select>    </div>
+    </div>
+<div class="field">
+    <div class="field-meta">
+        <label for="prompt_108">CheckboxSelect</label>            </div>
+    <div class="inputs">
+        <select name="prompt_108"><option value="">Bitte wählen Sie eine Option aus.</option>
+<option value="home">home</option>
+<option value="work">work</option>
+<option value="education">education</option>
+<option value="public">public</option>
+<option value="health">health</option>
+<option value="Web">Web</option>
+<option value="government">government</option>
+<option value="culture">culture</option>
+<option value="sport">sport</option>
+<option value="environment">environment</option>
+<option value="future">future</option>
+<option value="other">other</option></select>    </div>
+    </div>
+<div class="field">
+    <div class="field-meta">
+        <label for="prompt_109">CheckboxSelect</label>            </div>
+    <div class="inputs">
+        <select name="prompt_109"><option value="">Bitte wählen Sie eine Option aus.</option>
+<option value="home">home</option>
+<option value="work">work</option>
+<option value="education">education</option>
+<option value="public">public</option>
+<option value="health">health</option>
+<option value="Web">Web</option>
+<option value="government">government</option>
+<option value="culture">culture</option>
+<option value="sport">sport</option>
+<option value="environment">environment</option>
+<option value="future">future</option>
+<option value="other">other</option></select>    </div>
+    </div>
+<div class="field">
+    <div class="field-meta">
+        <label for="prompt_110">CheckboxSelect</label>            </div>
+    <div class="inputs">
+        <select name="prompt_110"><option value="">Bitte wählen Sie eine Option aus.</option>
+<option value="home">home</option>
+<option value="work">work</option>
+<option value="education">education</option>
+<option value="public">public</option>
+<option value="health">health</option>
+<option value="Web">Web</option>
+<option value="government">government</option>
+<option value="culture">culture</option>
+<option value="sport">sport</option>
+<option value="environment">environment</option>
+<option value="future">future</option>
+<option value="other">other</option></select>    </div>
+    </div>
+<div ><div class="field">
+<div class="field-meta">
+<p>W&auml;hlen Sie bis zu 3 passende Kategorien f&uuml;r Ihren Beitrag</p>
+</div>
+
+<div class="inputs">
+<fieldset id="fieldset"><label><input name="catCheckbox" onclick="return SetCheckboxVal(this);" type="checkbox" value="home" /> 🏠 Zuhause <small>(Familienleben, Privatleben, die eigenen vier W&auml;nde)</small></label><br />
+<label><input name="catCheckbox" onclick="return SetCheckboxVal(this);" type="checkbox" value="work" /> 🏢 Arbeit <small>(Berufliches, Wirtschaftliches)</small></label><br />
+<label><input name="catCheckbox" onclick="return SetCheckboxVal(this);" type="checkbox" value="education" /> 🏫 Bildung <small>(Schulen, Aus- und Weiterbildung, Hochschulen)</small></label><br />
+<label><input name="catCheckbox" onclick="return SetCheckboxVal(this);" type="checkbox" value="public" /> 🚌 &Ouml;ffentlichkeit <small>(allgemeines Verhalten, Gesellschaft, Verkehr)</small></label><br />
+<label><input name="catCheckbox" onclick="return SetCheckboxVal(this);" type="checkbox" value="health" /> 🌡 Wohlbefinden <small>(Gesundheit, Psyche, &Auml;ngste)</small></label><br />
+<label><input name="catCheckbox" onclick="return SetCheckboxVal(this);" type="checkbox" value="Web" /> 🌐 Im Netz <small>(Online-Inhalte, digitales soziales Leben)</small></label><br />
+<label><input name="catCheckbox" onclick="return SetCheckboxVal(this);" type="checkbox" value="government" /> 🗳️ Politisches <small>(Politik, Regierung, Beh&ouml;rden)</small></label><br />
+<label><input name="catCheckbox" onclick="return SetCheckboxVal(this);" type="checkbox" value="culture" /> 🎭 Kulturelles <small>(Kunst, Musik, Kino, Theater usw.)</small></label><br />
+<label><input name="catCheckbox" onclick="return SetCheckboxVal(this);" type="checkbox" value="sport" /> 🚴 Sport <small>(Bewegung)</small></label><br />
+<label><input name="catCheckbox" onclick="return SetCheckboxVal(this);" type="checkbox" value="environment" /> 🏞 Natur <small>(Aktivit&auml;ten, Freizeit, Fr&uuml;hling)</small></label><br />
+<label><input name="catCheckbox" onclick="return SetCheckboxVal(this);" type="checkbox" value="future" /> 🔮 Zukunft <small>(Zeit nach Corona)</small></label><br />
+<label><input name="catCheckbox" onclick="activateOther(this);" type="checkbox" value="other" /> ➕ Anderes <small>(was? bitte angeben)</small></label></fieldset>
+
+<div id="warning" style="display:none; width: max-content; padding: .2em; background-color: white; box-shadow: 0 0 6px rgb(173, 173, 173);"><small>Bitte w&auml;hlen Sie nicht mehr als SelectsNum Kategorien.</small></div>
+</div>
+</div></div><div class="field">
+    <div class="field-meta">
+        <label for="prompt_40">Anderes</label>            </div>
+    <div class="inputs">
+        <input type="text" name="prompt_40" value="">    </div>
+    </div>
+<div ><p><strong><small>Bitte beachten:</small></strong><br />
+<small>Es d&uuml;rfen nur Inhalte hochgeladen werden, die keine Rechte (insbesondere Urheber- und Pers&ouml;nlichkeitsrechte) verletzen. Die hochgeladenen Inhalte werden online publiziert und langfristig gespeichert. Widerrechtlich hochgeladene Inhalte werden gel&ouml;scht.</small></p></div><div class="field">
+    <div class="field-meta">
+        <label for="prompt_88">Mailadresse, falls Sie gerne kontaktiert werden möchten (wird nicht publiziert)</label>            </div>
+    <div class="inputs">
+        <input type="text" name="prompt_88" value="">    </div>
+    </div>
+<div class="field required">
+    <div class="field-meta">
+        <label for="prompt_6">Username (Beiträge können anonym veröffentlicht werden)</label>            </div>
+    <div class="inputs">
+        <input type="text" name="prompt_6" required="required" value="">    </div>
+    </div>
+<div class="field">
+    <div class="field-meta">
+        <label for="prompt_101">language:de</label>            </div>
+    <div class="inputs">
+        <select name="prompt_101"><option value="">Bitte wählen Sie eine Option aus.</option>
+<option value="de">de</option>
+<option value="fr">fr</option>
+<option value="it">it</option></select>    </div>
+    </div>
+<div class="field">
+    <div class="field-meta">
+        <label for="anon_1">Ich möchte anonym bleiben</label>            </div>
+    <div class="inputs">
+        <input type="hidden" name="anon_1" value="0"><input type="checkbox" name="anon_1" value="1">    </div>
+    </div>
+<div class="g-recaptcha" data-sitekey="6LfUFIYqAAAAAG-X4nFyAcc8U-ghBBs3pxEKw4cq"></div><input type="hidden" name="csrf_1" value="a43bc6d385f95db037b66c2f8b7bddcb-8024e0cc5a578e4d163b64ddcdbefd3b"><input type="submit" name="submit" value="Einreichen"></form></div>
+        </div>
+        <footer>
+                        <div><hr style="border-style: dotted none none none;  border-width: 3px;"><a href="https://www.dh.unibe.ch/">Digital Humanities</a>, Universität Bern, <a href="http://infoclio.ch">infoclio.ch</a> und <a href="https://search.usi.ch/it/unita-organizzative/15/istituto-di-media-e-giornalismo">IMeG, Università della Svizzera italiana</a><br/>Oberfläche erstellt mit OMEKA-S.</div>
+<div align="right"><a href="../page/impressum">Impressum</a></div>                    </footer>
+    <!-- Matomo -->
+<script type="text/javascript">
+
+if (window.location.hostname === 'www.corona-memory.ch') {
+  var _paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//analytics.corona-memory.ch/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '1']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+} else if (window.location.hostname === 'www.publics-arts.ch') {
+  var _paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(["setCookieDomain", "*.www.publics-arts.ch"]);
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://analytics.corona-memory.ch/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '2']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+}
+</script>
+<!-- End Matomo Code --></body>
+</html>

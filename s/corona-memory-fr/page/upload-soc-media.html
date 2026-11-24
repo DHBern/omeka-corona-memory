@@ -1,0 +1,306 @@
+<!DOCTYPE html><html lang="fr">    <head>
+        <meta charset="utf-8">
+<meta property="og&#x3A;title" content="Partager&#x20;un&#x20;lien&#x20;&#xB7;&#x20;DH&#x40;UNIBE&#x20;Omeka">
+<meta property="og&#x3A;type" content="website">
+<meta property="og&#x3A;url" content="https&#x3A;&#x2F;&#x2F;omeka.unibe.ch&#x2F;s&#x2F;corona-memory-fr&#x2F;page&#x2F;upload-soc-media">
+<meta name="viewport" content="width&#x3D;device-width,&#x20;initial-scale&#x3D;1">        <title>Partager un lien · Corona-Memory.ch FR · DH@UNIBE Omeka</title>        <link href="https&#x3A;&#x2F;&#x2F;fonts.googleapis.com&#x2F;css2&#x3F;family&#x3D;Economica&#x3A;wght&#x40;700&amp;family&#x3D;Open&#x2B;Sans&#x3A;ital,wght&#x40;0,400&#x3B;0,600&#x3B;0,700&#x3B;1,400&#x3B;1,600&#x3B;1,700&amp;display&#x3D;swap" media="screen" rel="stylesheet" type="text&#x2F;css">
+<link href="../../../application/asset/css/iconfonts.css" media="screen" rel="stylesheet" type="text&#x2F;css">
+<link href="../../../themes/corona-memory/asset/css/style.css" media="screen" rel="stylesheet" type="text&#x2F;css">
+<link href="../../../modules/Mapping/asset/vendor/leaflet/leaflet.css" media="screen" rel="stylesheet" type="text&#x2F;css">
+<link href="../../../modules/Mapping/asset/vendor/leaflet.geosearch/assets/css/leaflet.css" media="screen" rel="stylesheet" type="text&#x2F;css">
+<link href="../../../modules/Mapping/asset/css/mapping.css" media="screen" rel="stylesheet" type="text&#x2F;css">
+<link href="../../../modules/Collecting/asset/css/collecting.css" media="screen" rel="stylesheet" type="text&#x2F;css">
+<link href="../../../application/asset/css/page-blocks.css" media="screen" rel="stylesheet" type="text&#x2F;css">
+<link href="../../../modules/FieldsAsTags/asset/css/fieldsastags.css" media="screen" rel="stylesheet" type="text&#x2F;css">
+<link href="../../../application/asset/vendor/chosen-js/chosen.min.css" media="screen" rel="stylesheet" type="text&#x2F;css">
+<link href="../../../modules/AdvancedSearch/asset/css/search.css" media="screen" rel="stylesheet" type="text&#x2F;css">
+<link href="../../../modules/Internationalisation/asset/css/language-switcher.css" media="screen" rel="stylesheet" type="text&#x2F;css">
+<link href="../../../modules/Internationalisation/asset/vendor/flag-icon-css/css/flag-icon.min.css" media="screen" rel="stylesheet" type="text&#x2F;css">                <script  src="&#x2F;&#x2F;kit.fontawesome.com&#x2F;53f38da7f9.js"></script>
+<script  src="&#x2F;&#x2F;ajax.googleapis.com&#x2F;ajax&#x2F;libs&#x2F;jquery&#x2F;3.5.1&#x2F;jquery.min.js"></script>
+<script  src="../../../application/asset/js/global.js"></script>
+<script  src="../../../themes/corona-memory/asset/js/default.js"></script>
+<script  src="../../../application/asset/vendor/ckeditor/ckeditor.js"></script>
+<script  src="../../../application/asset/vendor/ckeditor/adapters/jquery.js"></script>
+<script >
+    //<!--
+    CKEDITOR.config.customConfig = '\x2Fapplication\x2Fasset\x2Fjs\x2Fckeditor_config.js\x3Fv\x3D3.1.1'
+    //-->
+</script>
+<script  src="../../../modules/Mapping/asset/vendor/leaflet/leaflet.js"></script>
+<script  src="../../../modules/Mapping/asset/js/mapping-collecting-form.js"></script>
+<script  src="../../../modules/Mapping/asset/vendor/leaflet.geosearch/dist/bundle.min.js"></script>
+<script  src="../../../modules/Collecting/asset/js/collecting-block.js"></script>
+<script  src="../../../application/asset/js/recaptcha.js"></script>
+<script  async="async" defer="defer" src="https&#x3A;&#x2F;&#x2F;www.google.com&#x2F;recaptcha&#x2F;api.js&#x3F;onload&#x3D;recaptchaCallback&amp;render&#x3D;explicit"></script>
+<script >
+    //<!--
+    
+Omeka.jsTranslate = function(str) {
+    var jsTranslations = {"Something went wrong":"Quelque chose s\u2019est mal pass\u00e9","Make private":"Rendre priv\u00e9","Make public":"Rendre public","Expand":"D\u00e9plier","Collapse":"Replier","You have unsaved changes.":"Vous avez des modifications non enregistr\u00e9es.","Restore item set":"R\u00e9tablir la collection","Close icon set":"Fermer l\u2019ensemble des ic\u00f4nes","Open icon set":"Ouvrir l\u2019ensemble des ic\u00f4nes","[Untitled]":"[Sans titre]","Failed loading resource template from API":"\u00c9chec du chargement du mod\u00e8le de ressource \u00e0 partir de l\u2019API","Restore property":"Restaurer la propri\u00e9t\u00e9","There are no available pages.":"Il n\u2019y a pas de page disponible.","Please enter a valid language tag":"Entrez une \u00e9tiquette de langue valide","Title":"Titre","Description":"Description","Automatic mapping of empty values":"Correspondance automatique des valeurs vides","Available":"Disponibles","Enabled":"Activ\u00e9","Find":"Trouver","Find resources\u2026":"Trouver des ressources\u2026","Processing\u2026":"En traitement\u2026","Try to map automatically the metadata and the properties that are not mapped yet with the fields of the index":"Try to map automatically the metadata and the properties that are not mapped yet with the fields of the index","Advanced bulk edit":"Traitement en lot avanc\u00e9","The actions are processed in the order of the form. Be careful when mixing them.":"Les actions sont trait\u00e9es dans l\u2019ordre du formulaire. Il convient de faire attention lorsque plusieurs actions sont choisies.","Cleaning":"Nettoyage","Convert datatype":"Conversion du type de donn\u00e9es","Displace values":"D\u00e9placer des valeurs","Explode values":"\u00c9clater des valeurs","Media HTML":"M\u00e9dia HTML","Order values":"Trier les valeurs","Replace literal values":"Remplacer des valeurs textuelles","Visibility of values":"Visibilit\u00e9 des valeurs","Remove mapping":"Supprimer le mappage"};
+    return (str in jsTranslations) ? jsTranslations[str] : str;
+};
+    //-->
+</script>
+<script  defer="defer" src="../../../application/asset/vendor/chosen-js/chosen.jquery.min.js"></script>
+<script  defer="defer" src="../../../modules/AdvancedSearch/asset/js/search.js"></script>        
+        <style>
+                        a:link,
+            a:visited {
+                color: #5a308d            }
+            
+            a:active,
+            a:hover {
+                color: #5a308d;
+                opacity: .75;
+            }
+                    </style>
+    </head>
+
+    <body class="page"><div style="background:#fff3cd;padding:.5em 1em;font:14px sans-serif;border-bottom:1px solid #e0c97f">Static archive of a former Omeka site (snapshot 2026-11-24). Search and interactive features are not available.</div>                <header>
+            <h1>
+                <a href="../index.html" class="site-title">
+                    <img src="../../../themes/corona-memory/asset/img/logo.svg" alt="Corona-Memory.ch FR" title="Accueil"/>
+                </a>
+            </h1>
+
+            <nav>
+            <ul class="navigation">
+    <li>
+        <a href="welcome.html">⌂</a>
+    </li>
+    <li>
+        <a href="contribuer.html">Contribuer</a>
+    </li>
+    <li>
+        <a href="../item.html">Témoignages</a>
+    </li>
+    <li>
+        <a href="visualisations.html">Visualisations</a>
+    </li>
+    <li>
+        <a href="postcard.html">Cartes postales</a>
+    </li>
+    <li>
+        <a href="apropos.html">À propos</a>
+    </li>
+    <li>
+        <a href="https&#x3A;&#x2F;&#x2F;corona-memory.ch">Deutsch</a>
+    </li>
+    <li>
+        <a href="../../corona-memory-it/index.html">Italiano</a>
+    </li>
+</ul>            </nav>
+        </header>
+        <div id="content" role="main">
+            
+
+
+<div class="blocks">
+    <p>Sur cette page vous pouvez partager un lien vers un contenu d&eacute;j&agrave; publi&eacute; (m&eacute;dias sociaux, site web, blog, article en ligne).</p>
+<h2>Partager un lien</h2>
+<form method="POST" name="collecting_form_4" action="https://omeka.unibe.ch/s/corona-memory-fr/collecting/4/submit" id="collecting_form_4" onsubmit="return false" onsubmit="return false"><div ><p><small>Seuls les champs avec des * sont obligatoires</small></p></div><div class="field required">
+    <div class="field-meta">
+        <label for="prompt_31">Titre</label>            </div>
+    <div class="inputs">
+        <input type="text" name="prompt_31" required="required" value="">    </div>
+    </div>
+<div class="field">
+    <div class="field-meta">
+        <label for="prompt_32">De quoi s&#039;agit-il ? Pourquoi ce lien est-il intéressant ?</label>            </div>
+    <div class="inputs">
+        <textarea name="prompt_32"></textarea>    </div>
+    </div>
+<div class="field">
+    <div class="field-meta">
+        <label for="prompt_33">Copier le lien</label>            </div>
+    <div class="inputs">
+        <input type="url" name="prompt_33" value="">    </div>
+    </div>
+<div class="field">
+    <div class="field-meta">
+        <label for="prompt_34">ou intégrer le média (HTML)</label>            </div>
+    <div class="inputs">
+        <textarea name="prompt_34" class="collecting-html"></textarea>    </div>
+    </div>
+<div class="field">
+    <div class="field-meta">
+        <label for="prompt_92">CheckboxSelect</label>            </div>
+    <div class="inputs">
+        <input type="text" name="prompt_92" value="">    </div>
+    </div>
+<div class="field">
+    <div class="field-meta">
+        <label for="prompt_93">CheckboxSelect</label>            </div>
+    <div class="inputs">
+        <input type="text" name="prompt_93" value="">    </div>
+    </div>
+<div class="field">
+    <div class="field-meta">
+        <label for="prompt_94">CheckboxSelect</label>            </div>
+    <div class="inputs">
+        <input type="text" name="prompt_94" value="">    </div>
+    </div>
+<div class="field">
+    <div class="field-meta">
+        <label for="prompt_115">CheckboxSelect</label>            </div>
+    <div class="inputs">
+        <select name="prompt_115"><option value="">Merci de choisir…</option>
+<option value="home">home</option>
+<option value="work">work</option>
+<option value="education">education</option>
+<option value="public">public</option>
+<option value="health">health</option>
+<option value="Web">Web</option>
+<option value="government">government</option>
+<option value="culture">culture</option>
+<option value="sport">sport</option>
+<option value="environment">environment</option>
+<option value="future">future</option>
+<option value="other">other</option></select>    </div>
+    </div>
+<div class="field">
+    <div class="field-meta">
+        <label for="prompt_116">CheckboxSelect</label>            </div>
+    <div class="inputs">
+        <select name="prompt_116"><option value="">Merci de choisir…</option>
+<option value="home">home</option>
+<option value="work">work</option>
+<option value="education">education</option>
+<option value="public">public</option>
+<option value="health">health</option>
+<option value="Web">Web</option>
+<option value="government">government</option>
+<option value="culture">culture</option>
+<option value="sport">sport</option>
+<option value="environment">environment</option>
+<option value="future">future</option>
+<option value="other">other</option></select>    </div>
+    </div>
+<div class="field">
+    <div class="field-meta">
+        <label for="prompt_117">CheckboxSelect</label>            </div>
+    <div class="inputs">
+        <select name="prompt_117"><option value="">Merci de choisir…</option>
+<option value="home">home</option>
+<option value="work">work</option>
+<option value="education">education</option>
+<option value="public">public</option>
+<option value="health">health</option>
+<option value="Web">Web</option>
+<option value="government">government</option>
+<option value="culture">culture</option>
+<option value="sport">sport</option>
+<option value="environment">environment</option>
+<option value="future">future</option>
+<option value="other">other</option></select>    </div>
+    </div>
+<div class="field">
+    <div class="field-meta">
+        <label for="prompt_118">CheckboxSelect</label>            </div>
+    <div class="inputs">
+        <select name="prompt_118"><option value="">Merci de choisir…</option>
+<option value="home">home</option>
+<option value="work">work</option>
+<option value="education">education</option>
+<option value="public">public</option>
+<option value="health">health</option>
+<option value="Web">Web</option>
+<option value="government">government</option>
+<option value="culture">culture</option>
+<option value="sport">sport</option>
+<option value="environment">environment</option>
+<option value="future">future</option>
+<option value="other">other</option></select>    </div>
+    </div>
+<div ><div class="field">
+<div class="field-meta">
+<p>Choisir une ou plusieurs cat&eacute;gories</p>
+</div>
+
+<div class="inputs">
+<fieldset id="fieldset"><label><input name="catCheckbox" onclick="return SetCheckboxVal(this);" type="checkbox" value="home" /> 🏠 Vie priv&eacute;e <small>(Famille, domicile)</small></label><br />
+<label><input name="catCheckbox" onclick="return SetCheckboxVal(this);" type="checkbox" value="work" /> 🏢 Travail <small>(Vie professionnelle, &eacute;conomie)</small></label><br />
+<label><input name="catCheckbox" onclick="return SetCheckboxVal(this);" type="checkbox" value="education" /> 🏫 Education <small>(Ecoles, universit&eacute;s, formation)</small></label><br />
+<label><input name="catCheckbox" onclick="return SetCheckboxVal(this);" type="checkbox" value="public" /> 🚌 Espace public <small>(Comportements collectifs, pratiques sociales, transports)</small></label><br />
+<label><input name="catCheckbox" onclick="return SetCheckboxVal(this);" type="checkbox" value="health" /> 🌡 Sant&eacute; <small>(Sant&eacute; psychologie, peurs)</small></label><br />
+<label><input name="catCheckbox" onclick="return SetCheckboxVal(this);" type="checkbox" value="Web" /> 🌐 Sur internet <small>(Contenus en ligne, vie sociale num&eacute;rique)</small></label><br />
+<label><input name="catCheckbox" onclick="return SetCheckboxVal(this);" type="checkbox" value="government" /> 🏛️ Politique <small>(Gouvernement, autorit&eacute;s, vie politique)</small></label><br />
+<label><input name="catCheckbox" onclick="return SetCheckboxVal(this);" type="checkbox" value="culture" /> 🎭 Culture <small>(Art, musique, cin&eacute;ma, th&eacute;&acirc;tre)</small></label><br />
+<label><input name="catCheckbox" onclick="return SetCheckboxVal(this);" type="checkbox" value="sport" /> 🚴 Sport <small>(Mouvement)</small></label><br />
+<label><input name="catCheckbox" onclick="return SetCheckboxVal(this);" type="checkbox" value="environment" /> 🏞 Nature <small>(Activit&eacute;s, loisirs, nature)</small></label><br />
+<label><input name="catCheckbox" onclick="return SetCheckboxVal(this);" type="checkbox" value="future" /> 🔮 Avenir <small>(Cons&eacute;quences du Coronavirus)</small></label><br />
+<label><input name="catCheckbox" onclick="return activateOther(this);" type="checkbox" value="other" /> ➕ Autre</label></fieldset>
+
+<div id="warning" style="display:none; width: max-content; padding: .2em; background-color: white; box-shadow: 0 0 6px rgb(173, 173, 173);"><small>S&#39;il vous pla&icirc;t ne pas s&eacute;lectionner plus de SelectsNum cat&eacute;gories.</small></div>
+</div>
+</div></div><div class="field">
+    <div class="field-meta">
+        <label for="prompt_91">Autre</label>            </div>
+    <div class="inputs">
+        <input type="text" name="prompt_91" value="">    </div>
+    </div>
+<div ><p><strong><small>Rappel:</small></strong><br />
+<small>Seuls les contenus conformes &agrave; la loi (en particulier le droit d&#39;auteur et celui des donn&eacute;es personnelles) peuvent &ecirc;tre t&eacute;l&eacute;charg&eacute;s. Les contributions seront publi&eacute;es en ligne et archiv&eacute;es. Les contenus qui contreviennent aux lois en vigueur seront supprim&eacute;s.</small></p></div><div class="field">
+    <div class="field-meta">
+        <label for="prompt_99">Adresse e-mail, si vous souhaitez être contacté (elle ne sera pas publiée).</label>            </div>
+    <div class="inputs">
+        <input type="text" name="prompt_99" value="">    </div>
+    </div>
+<div class="field">
+    <div class="field-meta">
+        <label for="prompt_36">Nom d&#039;utilisateur. Le document peut aussi être publié de façon anonyme.</label>            </div>
+    <div class="inputs">
+        <input type="text" name="prompt_36" value="">    </div>
+    </div>
+<div class="field">
+    <div class="field-meta">
+        <label for="prompt_104">language:fr</label>            </div>
+    <div class="inputs">
+        <select name="prompt_104"><option value="">Merci de choisir…</option>
+<option value="de">de</option>
+<option value="fr">fr</option>
+<option value="it">it</option></select>    </div>
+    </div>
+<div class="field">
+    <div class="field-meta">
+        <label for="anon_4">Je veux déposer anonymement</label>            </div>
+    <div class="inputs">
+        <input type="hidden" name="anon_4" value="0"><input type="checkbox" name="anon_4" value="1">    </div>
+    </div>
+<div class="g-recaptcha" data-sitekey="6LfUFIYqAAAAAG-X4nFyAcc8U-ghBBs3pxEKw4cq"></div><input type="hidden" name="csrf_4" value="ca8ed894afa0e77f55671774f65f05d1-9593a785c777a2eb2798bee13c36cb94"><input type="submit" name="submit" value="Soumettre"></form></div>
+        </div>
+        <footer>
+                        <div><hr style="border-style: dotted none none none;  border-width: 3px;"><a href="https://www.dh.unibe.ch/">Digital Humanities</a>, Universität Bern, <a href="http://infoclio.ch">infoclio.ch</a> & <a href="https://search.usi.ch/it/unita-organizzative/15/istituto-di-media-e-giornalismo">IMeG, Università della Svizzera italiana</a><br/>Interface réalisée avec OMEKA-S.</div>
+<div align="right"><a href="colophon.html">Impressum</a></div>                    </footer>
+    <!-- Matomo -->
+<script type="text/javascript">
+
+if (window.location.hostname === 'www.corona-memory.ch') {
+  var _paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//analytics.corona-memory.ch/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '1']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+} else if (window.location.hostname === 'www.publics-arts.ch') {
+  var _paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(["setCookieDomain", "*.www.publics-arts.ch"]);
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://analytics.corona-memory.ch/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '2']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+}
+</script>
+<!-- End Matomo Code --></body>
+</html>
